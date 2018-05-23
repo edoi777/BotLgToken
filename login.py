@@ -43,54 +43,52 @@ Headers2 = {
 print ("login success")
 
 
-helpMessage1 ="""Command Login Bot
+helpMessage1 ="""╠══[Command Login]
+╠══[Header 1 WIN ]
+╠[1]loginwin [ no jumlah ]
+╠══[Header 2 MAC ]
+╠[2]loginmac [ no jumlah ]
+╠══[Finish]
 
-Command For Login:
-Header 1 WIN : 
-1.) loginwin [ no jumlah ]
+╠══[Command admin ]
+╠[3] .staff
+╠[4] .help
+╠[5] .headers
+╠[6] .groups
+╠[7] .invite
+╠[8] .@bye
+╠[9] .ping
+╠[10] .say 
+╠══[Finish]
 
-Header 2 MAC :
-2.) loginmac [ no jumlah ]
-
-Command Related admin:
-3.) .staff
-4.) .help
-5.) .headers
-6.) .groups
-7.) .invite
-8.) .@bye
-9.) .ping
-10.) .say 
-
-Command Related owner:
-11.) .reboot
-12.) .admin:on @
-13.) .expel:on @
-14.) .staff
-15.) .headers
-16.) .leave allgroups
-
-
-Bot Login v1.11
+╠══[Command owner]
+╠[11] .reboot
+╠[12] .admin:on @
+╠[13] .expel:on @
+╠[14] .staff
+╠[15] .headers
+╠[16] .leave allgroups
+╠══[Finish]
+╠══[Bot Login v1.0]
 """
 
-helpMessage2 ="""Headers:
+helpMessage2 ="""╠══[Headers]
+╠[WIN header 1 ]
+╠[UA = Line/8.3.3]
+╠[LA = DESKTOPWIN\t8.3.0RFU-BOT\t18.99]
+╠══[Finish]
 
-WIN ( header 1 )
-UA = Line/8.3.3
-LA = DESKTOPWIN\t8.3.0RFU-BOT\t18.99
-
-MAC ( header 2 ) 
-UA = Line/8.4.1 iPad4,1 9.0.2
-LA = DESKTOPMAC 10.10.5-YOSEMITE-x64    MAC 10.8.5
-
+╠[MAC  header 2 ]
+╠[UA = Line/8.4.1 iPad4,1 9.0.2]
+╠[LA = DESKTOPMAC 10.10.5-YOSEMITE-x64    MAC 10.8.5]
+╠══[Finishi
 """
 KAC=[cl]
 mid = cl.getProfile().mid
 
 Bots=[mid]
-creator =["uac37ee2fc0ff922506327abe3e0e9205","u5163313915c1fd213507f2a47e23d527"]
-admin=["u8120ec6a6f6740ad182213cd55b54314"]
+creator =["u78643d09e42a36836a17cc918963a8b7"]
+admin=["u78643d09e42a36836a17cc918963a8b7"]
 wait = {
 
     'leaveRoom':True,
@@ -98,7 +96,7 @@ wait = {
     'autoJoin':True,
     'addadmin':False,
     'deladmin':False,
-    'message':"Thanks for add me",
+    'message':"Thanks for add me\n by TΣΔM SLΔCҜβΩT\nOwner: line.me/ti/p/~fuck.you__",
     "lang":"JP",
     }
     
@@ -224,7 +222,7 @@ def bot(op):
               for mi_d in creator:
                           mc2 += "%i - %s\n" % (num, cl.getContact(mi_d).displayName)
                           num=(num+1)
-              cl.sendText(msg.to,"Admins :\n\n" + mc1 + "\nOwners :\n\n" + mc2 + "\n\nBot Login v1.11")
+              cl.sendText(msg.to,"Admins :\n\n" + mc1 + "\nOwners :\n\n" + mc2 + "\n\nBot Login v1.0")
               print ("[Command]Stafflist executed")
                              
 #______________LOGIN WIN ____________________
